@@ -4,6 +4,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="dist/app.css">
     <title>php ajax dischi</title>
   </head>
   <body>
@@ -15,7 +16,7 @@
           <img src="<?php echo $cd["poster"] ?>" alt="poster cd">
           <h2> <?php echo $cd["title"] ?> </h2>
           <p> <?php echo $cd["author"] ?> </p>
-          <span> <?php echo $cd["year"] ?> </span>          
+          <span> <?php echo $cd["year"] ?> </span>
         </div>
       <?php endforeach; ?>
     <?php } ?>
