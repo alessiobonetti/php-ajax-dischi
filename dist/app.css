@@ -13,6 +13,7 @@ body {
   margin: 0 auto;
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .container .music_box {
