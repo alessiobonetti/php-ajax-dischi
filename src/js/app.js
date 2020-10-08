@@ -53,4 +53,9 @@ $(document).ready(
   function(){
     callAlbum();
     renderSelection();
+
+  $( ".header_selection" ).child(".option_author").on( "click", function() {
+    alert();
+  });
+
   });

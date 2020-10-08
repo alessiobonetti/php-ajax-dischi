@@ -39,7 +39,7 @@
   </script>
 
   <script id="options-template" type="text/x-handlebars-template">
-    <option value="{{selectAuthor}}">{{selectAuthor}}</option>
+    <option class="option_author" value="{{selectAuthor}}">{{selectAuthor}}</option>
   </script>
   <!-- JS -->
   <script src="dist/app.js" charset="utf-8"></script>
