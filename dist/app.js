@@ -16108,6 +16108,7 @@ function callAlbum() {
     method: "GET",
     success: function success(data, stato) {
       renderAlbum(data);
+      renderSelection(data);
     },
     error: function error(richiesta, stato, errori) {
       alert("E' avvenuto un errore. " + errore);
@@ -16136,8 +16137,25 @@ function renderAlbum(ele) {
 }
 
 ;
+
+function renderSelection(ele) {
+  var source = $("#options-template").html();
+  var template = Handlebars.compile(source);
+
+  for (var i = 0; i < ele.length; i++) {
+    var context = {
+      "selectAuthor": ele[i].author
+    };
+    var html = template(context);
+    $(".header_selection").append(html);
+  }
+
+  ;
+}
+
 $(document).ready(function () {
   callAlbum();
+  renderSelection();
 });
 
 /***/ }),

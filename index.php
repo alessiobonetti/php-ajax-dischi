@@ -13,6 +13,12 @@
 
         </div>
 
+        <select class="header_selection" name="">
+
+        </select>
+
+
+
       </div>
 
     </header>
@@ -32,6 +38,9 @@
     </div>
   </script>
 
+  <script id="options-template" type="text/x-handlebars-template">
+    <option value="{{selectAuthor}}">{{selectAuthor}}</option>
+  </script>
   <!-- JS -->
   <script src="dist/app.js" charset="utf-8"></script>
   </body>

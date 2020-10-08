@@ -9,6 +9,7 @@ function callAlbum () {
       method: "GET",
       success: function (data, stato) {
         renderAlbum(data);
+        renderSelection(data);
       },
 
       error: function (richiesta, stato, errori) {
@@ -19,7 +20,7 @@ function callAlbum () {
 
 };
 
-function renderAlbum (ele){
+function renderAlbum(ele) {
   var source = $("#album-template").html();
   var template = Handlebars.compile(source);
 
@@ -33,10 +34,23 @@ function renderAlbum (ele){
     var html = template(context);
     $("#album_stamp").append(html);
   };
-
 };
+
+function renderSelection(ele) {
+  var source = $("#options-template").html();
+  var template = Handlebars.compile(source);
+
+  for(var i = 0; i< ele.length; i++){
+    var context = {
+      "selectAuthor": ele[i].author
+    };
+    var html = template(context);
+    $(".header_selection").append(html);
+  };
+}
 
 $(document).ready(
   function(){
     callAlbum();
+    renderSelection();
   });
