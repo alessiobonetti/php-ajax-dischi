@@ -8,19 +8,30 @@
     <title>php ajax dischi</title>
   </head>
   <body>
+    <header>
+      <div class="header_bar container">
+        <div class="header_logo">
+          <img src="img/logo.png" alt="logo">
 
-    <div class="container">
-    <?php { ?>
-      <?php foreach ($database as $key => $cd): ?>
-        <div class="music_box">
-          <img src="<?php echo $cd["poster"] ?>" alt="poster cd">
-          <h2> <?php echo $cd["title"] ?> </h2>
-          <p> <?php echo $cd["author"] ?> </p>
-          <span> <?php echo $cd["year"] ?> </span>
         </div>
-      <?php endforeach; ?>
-    <?php } ?>
-    </div>
+
+      </div>
+
+    </header>
+    <main>
+      <div class="container">
+      <?php { ?>
+        <?php foreach ($database as $key => $cd): ?>
+          <div class="music_box">
+            <img src="<?php echo $cd["poster"] ?>" alt="poster cd">
+            <h2> <?php echo $cd["title"] ?> </h2>
+            <p> <?php echo $cd["author"] ?> </p>
+            <span> <?php echo $cd["year"] ?> </span>
+          </div>
+        <?php endforeach; ?>
+      <?php } ?>
+      </div>
+    </main>
 
   </body>
 </html>

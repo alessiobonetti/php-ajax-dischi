@@ -16,26 +16,41 @@ body {
   flex-wrap: wrap;
 }
 
-.container .music_box {
-  width: 15%;
-  margin: 5px;
-  text-align: center;
-  background-color: #50575E;
+.header_bar {
+  background-color: #2E3A46;
 }
 
-.container .music_box img {
+.header_bar .header_logo {
+  width: 60px;
+}
+
+.header_bar .header_logo img {
+  width: 100%;
+}
+
+main {
+  margin-top: 100px;
+}
+
+.music_box {
+  padding: 5px;
+  text-align: center;
+  background-color: #2E3A46;
+}
+
+.music_box img {
   max-width: 150px;
 }
 
-.container .music_box h2 {
+.music_box h2 {
   color: #fff;
 }
 
-.container .music_box p {
+.music_box p {
   color: lightgrey;
 }
 
-.container .music_box span {
+.music_box span {
   color: lightgrey;
 }
 

@@ -14,23 +14,6 @@ body {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-
-  .music_box{
-    width: 15%;
-    margin: 5px;
-    text-align: center;
-    background-color: $backgroundMusicBox;
-    img{
-      max-width: 150px;
-    }
-    h2{
-      color: #fff;
-    }
-    p{
-      color: $lightGrey;
-    }
-    span{
-      color: $lightGrey;
-    }
-  }
 }
+
+// width: calc((100% / 3) - 80px)

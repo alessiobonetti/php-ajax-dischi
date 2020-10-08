@@ -1,0 +1,21 @@
+
+main{
+  margin-top: 100px;
+}
+.music_box{
+  padding: 5px;
+  text-align: center;
+  background-color: $backgroundMusicBox;
+  img{
+    max-width: 150px;
+  }
+  h2{
+    color: #fff;
+  }
+  p{
+    color: $lightGrey;
+  }
+  span{
+    color: $lightGrey;
+  }
+}
