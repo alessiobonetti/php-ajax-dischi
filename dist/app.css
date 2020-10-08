@@ -17,6 +17,7 @@ body {
 }
 
 .header_bar {
+  display: flow-root;
   background-color: #2E3A46;
 }
 
@@ -33,6 +34,8 @@ main {
 }
 
 .music_box {
+  width: calc((100% / 3) - 80px);
+  margin: 5px;
   padding: 5px;
   text-align: center;
   background-color: #2E3A46;

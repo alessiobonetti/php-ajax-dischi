@@ -3,6 +3,8 @@ main{
   margin-top: 100px;
 }
 .music_box{
+  width: calc((100% / 3) - 80px);
+  margin: 5px;
   padding: 5px;
   text-align: center;
   background-color: $backgroundMusicBox;
