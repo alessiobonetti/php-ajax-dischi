@@ -20,11 +20,9 @@ body {
   display: flow-root;
   background-color: #2E3A46;
 }
-
 .header_bar .header_logo {
   width: 60px;
 }
-
 .header_bar .header_logo img {
   width: 100%;
 }
@@ -40,20 +38,15 @@ main {
   text-align: center;
   background-color: #2E3A46;
 }
-
 .music_box img {
   max-width: 150px;
 }
-
 .music_box h2 {
   color: #fff;
 }
-
 .music_box p {
   color: lightgrey;
 }
-
 .music_box span {
   color: lightgrey;
 }
-

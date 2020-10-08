@@ -1,5 +1,3 @@
-<?php include "db.php"; ?>
-
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -19,19 +17,22 @@
 
     </header>
     <main>
-      <div class="container">
-      <?php { ?>
-        <?php foreach ($database as $key => $cd): ?>
-          <div class="music_box">
-            <img src="<?php echo $cd["poster"] ?>" alt="poster cd">
-            <h2> <?php echo $cd["title"] ?> </h2>
-            <p> <?php echo $cd["author"] ?> </p>
-            <span> <?php echo $cd["year"] ?> </span>
-          </div>
-        <?php endforeach; ?>
-      <?php } ?>
+      <div id="album_stamp" class="container">
+
       </div>
     </main>
 
+  <!-- TEMPLATE -->
+  <script id="album-template" type="text/x-handlebars-template">
+    <div class="music_box">
+      <img src="{{poster}}" alt="poster cd">
+      <h2>{{title}}</h2>
+      <p>{{author}}</p>
+      <span>{{year}}</span>
+    </div>
+  </script>
+
+  <!-- JS -->
+  <script src="dist/app.js" charset="utf-8"></script>
   </body>
 </html>
